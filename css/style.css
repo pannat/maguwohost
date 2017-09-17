@@ -1,0 +1,276 @@
+html, body {
+  min-width: 1190px;
+  padding: 0;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Raleway", "Arial", sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.button {
+  display: inline-block;
+
+  font-size: 12px;
+  line-height: 24px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #202242;
+
+  background: #ffe13e;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ead040;
+}
+
+.button:active {
+  background: #d8c03d;
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 147px;
+}
+
+.main-logo {
+  width: 226px;
+  height: 33px;
+  margin-top: 58px;
+  margin-right: 103px;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 510px;
+  margin: 0;
+  margin-top: 67px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__item {
+  margin-right: 40px;
+}
+
+.main-nav__link {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Raleway", "Arial", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-nav__link:hover {
+  opacity: 0.5;
+}
+
+.main-nav__link:active {
+  color: #ffe13e;
+
+  opacity: 1;
+}
+
+.main-nav__link_current {
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffe13e;
+}
+
+.main-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 284px;
+  padding-bottom: 32px;
+  padding-left: 45px;
+
+  border-left: 1px solid #ebebeb;
+}
+
+.main-contacts__text {
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 15px;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #202242;
+}
+
+.main-contacts__link {
+  margin-right: 22px;
+  padding: 8px 31px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-contacts__tel {
+  margin-top: 3px;
+  padding: 7px 0 3px 15px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Lato", "Arial", sans-serif;
+
+  border-left: 1px solid #babbc4;
+}
+
+.check {
+  background: #93a6ad url("../img/background.jpg") no-repeat 50% 0;
+  background-size: cover;
+}
+
+.check__inner {
+  padding-top: 1px;
+  text-align: center;
+}
+
+.check__title {
+  margin: 0;
+  margin-top: 240px;
+  margin-bottom: 45px;
+
+  font-size: 46px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+.check__slogan {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 60px;
+  padding-bottom: 160px;
+
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  white-space: pre-wrap;
+  color: #ffffff;
+}
+
+.check__slogan::after {
+  content: "";
+
+  position: absolute;
+  top: 80px;
+  left: 50%;
+
+  width: 102px;
+  height: 109px;
+  margin-left: -51px;
+
+  background: url("../img/check-icon.svg") no-repeat 0 0;
+}
+
+.check__form {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-bottom: 140px;
+  padding: 18px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.check__input {
+  box-sizing: border-box;
+  width: 270px;
+  min-height: 54px;
+  padding: 10px 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Raleway", "Arial", sans-serif;
+  color: #000000;
+
+  border: none;
+}
+
+.check__input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.check__input:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.check__input::placeholder {
+  text-transform: capitalize;
+  color: #000000;
+
+  opacity: 1;
+}
+
+.check__choose-domain {
+  box-sizing: border-box;
+  width: 110px;
+  min-height: 54px;
+  padding: 15px 30px 15px 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Raleway", "Arial", sans-serif;
+  color: #000000;
+
+  background: #ffe13e url("../img/down-arrow.svg") no-repeat 80px 50%;
+  border: none;
+  border-right: 1px solid #ffffff;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+}
+
+.check__choose-domain::-ms-expand {
+  display: none;
+}
+
+.check__choose-domain:hover {
+  background: #ead040 url("../img/down-arrow.svg") no-repeat 80px 50%;
+}
+
+.check__choose-item {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Raleway", "Arial", sans-serif;
+  color: #000000;
+
+  background: transparent;
+}
+
+.check__button {
+  box-sizing: border-box;
+  min-width: 154px;
+  padding: 15px;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #ffffff;
+
+  border: none;
+}
