@@ -74,11 +74,14 @@ html, body {
 }
 
 .main-nav__link:hover {
+  text-decoration: underline;
+  
   opacity: 0.5;
 }
 
 .main-nav__link:active {
   color: #ffe13e;
+  text-decoration: underline;
 
   opacity: 1;
 }
@@ -155,31 +158,17 @@ html, body {
 }
 
 .check__slogan {
-  position: relative;
-
   margin: 0;
-  margin-bottom: 60px;
-  padding-bottom: 160px;
+  margin-bottom: 50px;
+  padding-bottom: 180px;
 
   font-size: 30px;
   line-height: 24px;
   text-align: center;
   white-space: pre-wrap;
   color: #ffffff;
-}
 
-.check__slogan::after {
-  content: "";
-
-  position: absolute;
-  top: 80px;
-  left: 50%;
-
-  width: 102px;
-  height: 109px;
-  margin-left: -51px;
-
-  background: url("../img/check-icon.svg") no-repeat 0 0;
+  background: url("../img/check-icon.svg") no-repeat 50% 85px;
 }
 
 .check__form {
@@ -273,4 +262,111 @@ html, body {
   color: #ffffff;
 
   border: none;
+}
+
+.advantages {
+  background: linear-gradient(to right, #202242 50%, #ffe13e 50% );
+}
+
+.advantages__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  flex-basis: 50%;
+  margin-bottom: 84px;
+}
+
+.advantages__webhost {
+  background: #202242;
+  text-align: center;
+}
+
+.advantages__domain {
+  background: #ffe13e;
+  text-align: center;
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.advantages__title-webhost {
+  margin: 0;
+  margin-top: 115px;
+  margin-bottom: 25px;
+  padding-top: 225px;
+
+  background: url("../img/webhost.svg") no-repeat 200px 0;
+}
+
+.advantages__title-domain {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.advantages__title-top {
+  margin-top: 65px;
+  padding: 115px 70px 115px 70px;
+
+  font-size: 134px;
+  line-height: 45px;
+  text-transform: none;
+  color: #000000;
+}
+
+.advantages__text {
+  width: 420px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 70px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.advantages__button {
+  min-width: 51px;
+  margin-bottom: 20px;
+  padding: 14px 50px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+}
+
+.advantages__button_left {
+  background: #202242;
+}
+
+.advantages__button_left:hover {
+  background: #1b1c37;
+}
+
+.advantages__button_left:active {
+  background: #111229;
+}
+
+.features {
+  min-height: 700px;
+  background: #fbf8f1 url("../img/bg-features.svg") no-repeat 50% 85px;
+}
+
+.features__title {
+  margin: 0;
+}
+
+.features__item-title {
+  margin: 0;
 }
